@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(Pixelpurl-0vBPP.ttf);
+    display: swap;
+}
+
+
+
+:root{
+    font-family: 'myFont';
+    --dkClr:#181818;
+    --liClr:whitesmoke;
+    --accClr:#0D0D35;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    background-color: var(--dkClr);
+    color: var(--liClr);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 20px;
+    font-size: 50px;
+}
+
+
+main{
+    flex:1;
+    display: flex;
+}
+
+
+#gameCanvas{
+    border: 3px solid #86b9ef;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    width: 800px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index:1;
+
+}
